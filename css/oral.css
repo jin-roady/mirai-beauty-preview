@@ -1,0 +1,215 @@
+@charset "utf-8";
+.oral-fv-wrapper{
+    background-image: url(../images8/fv-oral-bg@2x.jpg);
+}
+
+.oral-menu-wrapper {
+    background-color: #F8F7F6;
+    padding: 60px 20px 70px;
+}
+.oral-menu-wrapper h4 {
+    max-width: 850px;
+    box-sizing: border-box;
+    font-size: 1.5625em;
+    padding-left: 20px;
+    padding-bottom: 2px;
+    border-left: 6px solid #000;
+    margin: 0 auto 35px;
+}
+.oral-menu-container {
+    max-width: 850px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 3.125em;
+}
+.oral-menu-container h5 {
+    font-size: 1.313em;
+    color: #C7AF06;
+    line-height: 1.5;
+    margin: 50px 0 20px;
+}
+.oral-menu-container h5:first-child {
+    margin-top: 0;
+}
+.oral-menu-container div {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    column-gap: 2em;
+    align-items: start;
+    font-size: 0.875em;
+    border-bottom: #1a1a1a 1px dashed;
+    padding: 18px 0 12px;
+    line-height: 1.7;
+}
+.oral-menu-container div p:first-child {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+.oral-menu-container div p:last-child {
+    text-align: right;
+    white-space: nowrap;
+}
+.oral-menu-container h6 {
+    background-color: rgba(222, 206, 198, 0.5);
+    font-size: 0.875em;
+    padding: 13px 1.286em;
+    line-height: 22px;
+    letter-spacing: 2px;
+    margin: 0 0 26px;
+}
+.oral-menu-wrapper > a {
+    margin: 45px auto 0;
+    padding: 18px 3.125em;
+    width: fit-content;
+    border: #1a1a1a 1px solid;
+    border-radius: 100px;
+    display: block;
+    position: relative;
+}
+.oral-menu-wrapper > a::after {
+    content: url(../images11/more.png);
+    position: absolute;
+    display:inline-block;
+    top: 25%;
+    right: -8%;
+}
+
+/* ////////////////////////
+    sp
+//////////////////////// */
+@media screen and (max-width: 690px) {
+    .oral-menu-wrapper {
+        padding: 50px 20px 60px;
+    }
+    .oral-menu-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .oral-menu-wrapper h4 {
+        margin-bottom: 30px;
+    }
+    .oral-menu-container h5 {
+        margin-top: 42px;
+    }
+    .oral-menu-container div {
+        grid-template-columns: minmax(0, 1fr) max-content;
+        column-gap: 0.75em;
+        align-items: baseline;
+        padding: 16px 0 10px;
+        font-size: clamp(0.8125rem, 3.6vw, 0.875rem);
+    }
+    .oral-menu-container div p:first-child {
+        padding-right: 0.25em;
+        overflow-wrap: anywhere;
+    }
+    .oral-menu-container div p:last-child {
+        max-width: none;
+        white-space: nowrap;
+        font-variant-numeric: tabular-nums;
+    }
+    .oral-menu-container .oral-item-note {
+        display: block;
+    }
+    .oral-menu-container h6,
+    .caution-list,
+    .note-oral-text {
+        overflow-wrap: anywhere;
+    }
+    .oral-menu-wrapper > a {
+        max-width: 100%;
+        box-sizing: border-box;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+/* 親pタグのスタイル */
+.note-oral-custom {
+    all: unset;               /* 既存CSSを完全解除 */
+    display: block;
+    font-size: 0.85em;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/* aタグ用のスタイル */
+.note-oral-custom .note-oral-link {
+    all: unset;               /* リンクの既存スタイル解除 */
+    cursor: pointer;          /* リンクらしさを付与 */
+    color: #5a8dee;
+    text-decoration: underline;
+}
+
+.note-oral-custom .note-oral-link:hover {
+    opacity: 0.8;              /* hoverエフェクト */
+}
+
+.caution-list {
+    margin: 32px 0 50px;    /* 上下余白 */
+    padding: 15px 20px;     /* 内側余白 */
+    background-color: #fff8e1; /* 薄い黄色背景 */
+    border: 1px solid #f0d98c; /* 枠線 */
+    border-radius: 6px;     /* 角丸 */
+    font-size: 14px;        /* 少し小さめ文字 */
+    line-height: 1.6;       /* 行間 */
+  }
+  
+  .caution-list li {
+    margin-bottom: 8px;     /* 各項目の間隔 */
+  }
+  
+  .caution-list li:last-child {
+    margin-bottom: 0;       /* 最後の項目の余白をなくす */
+  }
+  .note-oral-link-blue {
+    color: #007bff;          /* 標準の青色 */
+    text-decoration: underline; /* 下線でリンク感を出す */
+    cursor: pointer;
+  }
+  
+  .note-oral-link-blue:hover {
+    color: #0056b3;          /* ホバー時に濃い青 */
+    text-decoration: none;   /* ホバー時に下線を消す（好みに応じて変更可） */
+  }
+  .note-oral-link-blue {
+    display: inline !important;           /* 横並び強制 */
+    padding: 0 !important;                /* 余白リセット強制 */
+    margin: 0 !important;                 /* 余白リセット強制 */
+    border: none !important;              /* 枠線強制削除 */
+    background: none !important;          /* 背景強制削除 */
+    color: #007bff !important;            /* 青文字強制 */
+    text-decoration: underline !important; /* 下線強制 */
+    cursor: pointer !important;
+  }
+  
+  .note-oral-link-blue:hover {
+    color: #0056b3 !important;            /* ホバー時の濃い青強制 */
+    text-decoration: none !important;
+  }
+  .note-oral-text {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #333; /* 本文色 */
+  }
+  
+  .note-oral-link-blue {
+    display: inline !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    background: none !important;
+    color: #007bff !important;
+    text-decoration: underline !important;
+    cursor: pointer !important;
+  
+    /* 矢印や装飾の強制削除 */
+    background-image: none !important;
+  }
+  
+  .note-oral-link-blue::after {
+    content: none !important; /* 擬似要素で矢印を消す */
+  }

@@ -1,0 +1,349 @@
+@charset "utf-8";
+.doctors-fv-wrapper{
+    background-image: url(../images7/fv-doctors-bg@2x.jpg);
+}
+
+/* doctors */
+.doctors-wrapper {
+    background-color: F8F7F6;
+	margin-bottom: 30px;
+}
+.doctors-title {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.doctors-title h3 {
+    text-align: center;
+    padding: 60px 0 50px 0;
+    font-size: 2em;
+    letter-spacing: 0.3em;
+}
+.doctors-title p {
+    text-align: left;
+    font-size: 0.875em;
+    line-height: 20px;
+}
+.doctors-item-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.doctors-item-wrapper h4 {
+    font-size: 1.5em;
+    margin: 75px 0 35px 0;
+}
+.doctors-item-wrapper h4 a {
+    border-bottom: 0.5px #000 solid;
+    width: fit-content;
+}
+.doctors-item-wrapper h4::before {
+    content: "";
+    border-left: 6px solid #000;
+    padding-right: 20px;
+}
+.doctors-item-wrapper h4 span {
+    font-size: 0.625em;
+    padding: 0 0 0 0.8em;
+}
+.doctors-item-container {
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex: 1;
+    gap: 3.75em;
+}
+.doctors-item-container img {
+    margin: 40px 0 10px 0;
+    width: 200px;
+}
+.doctors-item-container img.brighcell-release-image {
+    width: 200px;
+    height: 240px;
+    object-fit: contain;
+}
+.doctors-item-container .item-name {
+    padding: 0 0 10px 0;
+}
+.doctors-item-container a {
+    display: block;
+    font-size: 1em;
+}
+.doctors-item-price {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0 0 0;
+}
+
+@media screen and (min-width: 961px) {
+  .doctors-wrapper .doctors-item-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px 20px;
+    align-items: stretch;
+    margin-bottom: 24px;
+  }
+
+  .doctors-wrapper .doctors-item-container > div {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    min-width: 0;
+    margin: 0;
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #e5dedb;
+    border-radius: 4px;
+  }
+
+  .doctors-wrapper .doctors-item-container img,
+  .doctors-wrapper .doctors-item-container img.brighcell-release-image {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: 210px;
+    margin: 0 auto 14px;
+    object-fit: contain;
+  }
+
+  .doctors-wrapper .doctors-item-container .item-name {
+    min-height: 3.2em;
+    margin: 0;
+    padding: 0 0 10px;
+    line-height: 1.6;
+  }
+
+  .doctors-wrapper .doctors-item-price {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px;
+    align-items: baseline;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto;
+    padding: 7px 0 0;
+    border-top: 1px dashed #c7bbb6;
+    font-size: 13px;
+  }
+
+  .doctors-wrapper .doctors-item-price + .doctors-item-price {
+    margin-top: 7px;
+  }
+
+  .doctors-wrapper .doctors-item-price p:last-child,
+  .doctors-wrapper .doctors-item-price span:last-child {
+    white-space: nowrap;
+  }
+
+  .doctors-wrapper .doctors-item-price p:only-child {
+    grid-column: 1 / -1;
+    justify-self: end;
+  }
+}
+
+/* /doctors */
+
+/* ////////////////////////
+    tablet
+//////////////////////// */
+@media screen and (max-width: 960px) {
+    .doctors-item-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+}
+@media screen and (max-width: 690px) {
+    .doctors-item-container {
+        margin: 0 auto;
+    }
+    .doctors-item-price {
+        justify-content: space-between;
+    }
+}
+
+.item-name {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 10px 0 5px;
+    word-break: break-word;
+  }
+  .item-name .sub-item {
+    font-size: 13px;
+    display: block;
+    margin-top: 4px;
+    line-height: 1.4;
+    color: #555; /* 任意のやや薄めの色で構成情報の視認性をUP */
+  }
+  .doctors-item-container > div {
+    width: 23%;
+    margin: 1%;
+    box-sizing: border-box;
+    vertical-align: top;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .doctors-item-container > div {
+      width: 48%;
+      margin: 1% 1%;
+    }
+  
+    .item-name {
+      font-size: 13px;
+    }
+  
+    .item-name .sub-item {
+      font-size: 12px;
+    }
+
+    .doctors-item-container img.brighcell-release-image {
+      width: 100%;
+      height: 220px;
+    }
+  }
+
+/* Product grid */
+@media screen and (max-width: 960px) {
+  .doctors-wrapper .doctors-title,
+  .doctors-wrapper .doctors-item-wrapper {
+    width: calc(100% - 32px);
+  }
+
+  .doctors-wrapper .doctors-item-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 20px;
+    align-items: stretch;
+    margin: 0 auto 24px;
+  }
+
+  .doctors-wrapper .doctors-item-container > div {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    min-width: 0;
+    margin: 0;
+    padding: 14px;
+    background: #fff;
+    border: 1px solid #e5dedb;
+    border-radius: 4px;
+  }
+
+  .doctors-wrapper .doctors-item-container img,
+  .doctors-wrapper .doctors-item-container img.brighcell-release-image {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: 190px;
+    margin: 0 auto 12px;
+    object-fit: contain;
+  }
+
+  .doctors-wrapper .doctors-item-container .item-name {
+    min-height: 3.2em;
+    margin: 0;
+    padding: 0 0 10px;
+    line-height: 1.6;
+  }
+
+  .doctors-wrapper .doctors-item-price {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px;
+    align-items: baseline;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto;
+    padding: 7px 0 0;
+    border-top: 1px dashed #c7bbb6;
+  }
+
+  .doctors-wrapper .doctors-item-price + .doctors-item-price {
+    margin-top: 7px;
+  }
+
+  .doctors-wrapper .doctors-item-price p,
+  .doctors-wrapper .doctors-item-price span {
+    min-width: 0;
+  }
+
+  .doctors-wrapper .doctors-item-price p:last-child,
+  .doctors-wrapper .doctors-item-price span:last-child {
+    white-space: nowrap;
+  }
+
+  .doctors-wrapper .doctors-item-price p:only-child {
+    grid-column: 1 / -1;
+    justify-self: end;
+  }
+}
+
+@media screen and (min-width: 691px) and (max-width: 960px) {
+  .doctors-page .sitemap-link {
+    max-width: calc(100% - 32px);
+    padding-right: 4em;
+    box-sizing: border-box;
+  }
+
+  .doctors-page .sitemap-link::after {
+    right: 18px;
+    width: 28px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .doctors-wrapper .doctors-title,
+  .doctors-wrapper .doctors-item-wrapper {
+    width: calc(100% - 24px);
+  }
+
+  .doctors-wrapper .doctors-title h3 {
+    padding: 46px 0 34px;
+  }
+
+  .doctors-wrapper .doctors-item-wrapper h4 {
+    margin: 54px 0 24px;
+    font-size: 1.25em;
+  }
+
+  .doctors-wrapper .doctors-item-container {
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .doctors-wrapper .doctors-item-container > div {
+    padding: 10px 10px 12px;
+  }
+
+  .doctors-wrapper .doctors-item-container img,
+  .doctors-wrapper .doctors-item-container img.brighcell-release-image {
+    max-width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+
+  .doctors-wrapper .doctors-item-container .item-name {
+    min-height: 3.2em;
+    padding-bottom: 8px;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+  }
+
+  .doctors-wrapper .doctors-item-container .item-name .sub-item {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+  .doctors-wrapper .doctors-item-price {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2px;
+    padding-top: 6px;
+    font-size: 11px;
+  }
+
+  .doctors-wrapper .doctors-item-price p:last-child,
+  .doctors-wrapper .doctors-item-price span:last-child {
+    justify-self: end;
+  }
+}

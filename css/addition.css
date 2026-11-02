@@ -1,0 +1,924 @@
+@charset "UTF-8";
+/*----------------------------------------------------
+共通
+----------------------------------------------------*/
+.removal-flow-container_sp {
+  display: none;
+}
+
+.lhala-component-name-long {
+  min-width: 0;
+  white-space: normal;
+}
+
+.lhala-component-name-long h6 {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  line-height: 1.7;
+}
+
+.beauty_menu_p01 {
+  margin-top: 20px !important;
+}
+
+.beauty-price-list .toggle:checked + .title + .content,
+.beauty-price-list .content.show {
+  max-height: 3000px !important;
+}
+
+.beauty-price-list .content-wrapper > .beauty_menu_p01 {
+  color: #A48A81;
+  font-weight: 500;
+  border-bottom: 0.75px #1a1a1a dashed;
+  padding: 25px 0 10px;
+}
+
+.beauty-price-list .content-wrapper div p:only-child {
+  color: #A48A81;
+  font-weight: 500;
+}
+
+.beauty-price-list .content-wrapper .beauty-price-section-row {
+  display: block;
+  width: 100%;
+}
+
+.beauty-price-list .content-wrapper .beauty-price-section-row > .beauty-price-section-heading {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.beauty-price-list .content-wrapper .hydra-price-section-title,
+.beauty-price-list .content-wrapper .hydra-price-section-note {
+  display: block;
+}
+
+.beauty-price-list .content-wrapper .hydra-price-section-title {
+  white-space: nowrap;
+}
+
+.beauty-price-list .content-wrapper .hydra-price-section-note {
+  margin-top: 0.25em;
+  color: #1a1a1a;
+  font-weight: 400;
+}
+
+.beauty-price-list .content-wrapper .hydra-gender-heading {
+  display: block;
+  padding: 18px 0 6px;
+  border-bottom: 0;
+}
+
+.beauty-price-list .content-wrapper .hydra-gender-heading > p {
+  margin: 0;
+}
+
+.beauty-price-list .content-wrapper > div:not(.beauty-price-section-row) > p:last-child:not(:only-child) {
+  margin-left: auto;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.beauty-price-list #toggle5 + .title + .content .content-wrapper > div:not(.beauty-price-section-row):not(.hydra-gender-heading) > p:first-child::before {
+  content: "・";
+}
+
+.beauty-price-list #toggle5 + .title + .content .content-wrapper .beauty-price-section-heading::before {
+  content: none !important;
+}
+
+.beauty-price-list-set .title {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 20px 1.25em 22px;
+  line-height: 1.7;
+  text-align: left;
+  white-space: normal;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+.beauty-price-list-set .title div {
+  display: block;
+  margin: 0 0 8px 0;
+  min-width: 0;
+  max-width: 18em;
+  white-space: normal;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+.beauty-price-list-set .title span {
+  display: inline-block;
+  font-size: 2em;
+  line-height: 1;
+  padding: 0 5px 0 0;
+}
+
+.beauty-price-list-set .content-wrapper div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 1em;
+  align-items: start;
+}
+
+.beauty-price-list-set .content-wrapper div p:first-child {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.beauty-price-list-set .content-wrapper div p:last-child {
+  justify-self: end;
+  min-width: 0;
+  max-width: 100%;
+  text-align: right;
+  white-space: nowrap;
+  overflow-wrap: anywhere;
+}
+
+.beauty-price-text p {
+  display: block;
+  width: min(100%, calc(100vw - 70px)) !important;
+  max-width: min(100%, calc(100vw - 70px));
+  white-space: normal;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+.dermapen-risk-wrapper {
+  background-color: #F9DDD2;
+  padding: 50px 0 1px;
+}
+
+.dermapen-risk-wrapper h3 {
+  font-size: 1.438em;
+  background-color: #fff;
+  width: fit-content;
+  margin: 0 auto 40px;
+}
+
+.dermapen-risk-container {
+  max-width: 1000px;
+  margin: 0 auto 70px;
+  padding: 35px 3.438em 10px;
+  background-color: #fff;
+  border: 1px #A48A81 solid;
+}
+
+.dermapen-risk-container p {
+    font-size: 0.875em;
+    padding: 0 0 30px;
+    line-height: 23px;
+    letter-spacing: 1px;
+}
+
+.drip-component-wrapper.ultimgun-treatment-detail-wrapper {
+    padding-bottom: 30px;
+}
+
+.drip-component-wrapper.ultimgun-lineup-wrapper {
+    padding-top: 30px;
+}
+
+.ultimgun-lineup-wrapper h4 {
+    margin-top: 0 !important;
+}
+
+.about-wrapper .about_bg_sp {
+  display: none;
+}
+
+.docment-preview01 {
+  position: relative;
+  width: 252px;
+  height: 133px;
+  background: url(../images/doui_bg.svg);
+  box-shadow: 4px 4px 5px rgba(241, 204, 192, 0.75);
+}
+
+.docment-preview01 p.p01 {
+  width: 100%;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: normal;
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+.docment-preview01 .arrow {
+  position: absolute;
+  width: 11px;
+  margin: 0 auto;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.docment-preview01 .arrow img {
+  width: 100%;
+  height: auto;
+}
+
+.docment-preview02 {
+  position: relative;
+  width: 252px;
+  height: 133px;
+  background: url(../images/doui_bg02.svg);
+  box-shadow: 4px 4px 5px rgba(241, 204, 192, 0.75);
+}
+
+.docment-preview02 p.p01 {
+  width: 100%;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: normal;
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+.docment-preview02 .arrow {
+  position: absolute;
+  width: 11px;
+  margin: 0 auto;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.docment-preview02 .arrow img {
+  width: 100%;
+  height: auto;
+}
+
+a.about-image {
+  width: 394px;
+  display: block;
+}
+
+a.about-image img {
+  width: 100%;
+  height: auto;
+}
+
+.drip-type-content1 h5 {
+  font-size: 1.16em;
+}
+
+.beauty-menu-title h5.beauty-menu-title--new {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  line-height: 1.45;
+}
+
+.beauty-menu-title h5 .newstopic {
+  flex: 0 0 auto;
+  margin-right: 0;
+  line-height: 1.4;
+}
+
+.beauty-menu-name {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* Treatment page titles */
+.beauty-content-wrapper > h3,
+.dermapen-content-wrapper > h3,
+.dermapen-point-container > h3,
+.drip-content-wrapper > h3,
+.liftera-content-wrapper > h3,
+.pico-content-wrapper > h3,
+.removal-content-wrapper > h3,
+.tattoo-content-wrapper > h3 {
+  box-sizing: border-box;
+  max-width: calc(100% - 40px);
+  min-width: 0;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+
+@media screen and (max-width: 690px) {
+  h4.responsive-treatment-detail-heading {
+    box-sizing: border-box;
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 1.25em !important;
+    line-height: 1.6 !important;
+    padding-left: 14px !important;
+    border-left: 5px solid #000 !important;
+    margin-bottom: 20px !important;
+    white-space: normal;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .beauty-content-wrapper > h3,
+  .dermapen-content-wrapper > h3,
+  .dermapen-point-container > h3,
+  .drip-content-wrapper > h3,
+  .liftera-content-wrapper > h3,
+  .pico-content-wrapper > h3,
+  .removal-content-wrapper > h3,
+  .tattoo-content-wrapper > h3 {
+    width: fit-content;
+    max-width: 100%;
+    font-size: clamp(1.35rem, 6.8vw, 1.7rem);
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+  }
+}
+
+/* Carbon dioxide laser: keep dense treatment information readable on phones. */
+@media screen and (max-width: 690px) {
+  .co2-laser-page .liftera-content-wrapper {
+    padding: 42px 20px 0;
+  }
+
+  .co2-laser-page .liftera-content-wrapper > h3 {
+    margin-bottom: 24px;
+  }
+
+  .co2-laser-page .liftera-content-wrapper > p {
+    line-height: 1.8;
+  }
+
+  .co2-laser-page .piamo-device-image {
+    display: block;
+    width: min(100%, 320px);
+    height: auto;
+    margin: 28px auto 0;
+  }
+
+  .co2-laser-page .liftera-content-container {
+    margin-top: 32px;
+    padding: 28px 18px 30px;
+  }
+
+  .co2-laser-page .liftera-content-table {
+    display: block;
+    padding-left: 0;
+  }
+
+  .co2-laser-page .liftera-content-table .liftera-worry-item {
+    margin-bottom: 14px;
+    padding-top: 0;
+    line-height: 1.65;
+  }
+
+  .co2-laser-page .drip-component-wrapper,
+  .co2-laser-page .drip-info-section,
+  .co2-laser-page .liftera-risk-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .co2-laser-page .drip-component-wrapper .pico-menu-text,
+  .co2-laser-page .liftera-risk-container,
+  .co2-laser-page .drip-info-block {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .co2-laser-page .detail-bullet-list li,
+  .co2-laser-page .risk-bullet-list li,
+  .co2-laser-page .drip-info-text {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-wrapper .menu-container {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+  }
+  .menu-wrapper .menu-container div {
+    width: 43vw;
+  }
+  .search-wrapper {
+    padding: 0;
+  }
+  .search-wrapper .search-container {
+    width: 90vw !important;
+    margin: 0 auto;
+    max-width: auto;
+    display: flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    gap: 0;
+  }
+  .search-wrapper .search-container div {
+    width: 43vw;
+    margin-bottom: 2em;
+  }
+  .search-wrapper .search-container div .search-image {
+    width: 100%;
+  }
+  .search-wrapper .search-container div .search-image img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .search-wrapper .search-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 30px auto 0;
+    padding: 0 20px;
+  }
+  .about-wrapper {
+    background-image: url(../images/about-background.png);
+    background-size: cover;
+    background-position: center center;
+    padding: 0 0 85px 0;
+  }
+  footer small {
+    font-size: 10px;
+  }
+  .removal-content-wrapper .removal-content-container div {
+    padding-left: 0;
+  }
+  .beauty-content-wrapper .beauty-content-container div {
+    padding-left: 0;
+  }
+  .drip-content-wrapper .drip-content-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .drip-content-wrapper .drip-content-container div {
+    padding-left: 0;
+  }
+  .removal-flow-container {
+    display: none;
+  }
+  .removal-flow-container_sp {
+    width: 100%;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 80px;
+    padding: 0;
+    gap: 0;
+    display: flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+  }
+  .removal-flow-container_sp .image_text {
+    width: 100%;
+  }
+  .removal-flow-container_sp .image_text img {
+    width: 100%;
+    height: auto;
+  }
+  .removal-flow-container_sp .flow_box {
+    width: calc( (100% - 70px) / 2 );
+    margin-bottom: 20px;
+  }
+  .removal-flow-container_sp p span {
+    font-size: 1.714em;
+    color: #fff;
+    padding: 0 5px 0 0;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .removal-flow-container_sp img {
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+  .removal-flow-image-right::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px #1a1a1a solid;
+    border-right: 1px #1a1a1a solid;
+    position: absolute;
+    rotate: -45deg;
+    left: calc( 50% - 10px );
+    top: 30%;
+  }
+  .removal-flow-image-right {
+    margin: 0;
+  }
+  .faq-common-wrapper .faq-common-container .title {
+    padding: 20px 3em 20px 1.5em;
+  }
+  .faq-common-container .title::after,
+  .faq-common-container .title::before {
+    top: 33%;
+    right: 7%;
+  }
+  .doctors-item-container {
+    max-width: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    gap: 0;
+  }
+  .doctors-item-container div {
+    width: 45vw;
+  }
+  .doctors-item-container img {
+    margin: 40px 0 10px 0;
+    width: 100%;
+  }
+  .removal-menu-list {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .removal-menu-list ul {
+    display: flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+    text-align: left;
+    padding: 0;
+    margin-left: 10px;
+  }
+  .removal-menu-list ul li {
+    width: 40vw;
+    padding: 0;
+    text-align: left;
+  }
+  .about-wrapper {
+    position: relative;
+    background-image: none;
+  }
+  .about-wrapper .about_bg_sp {
+    width: 25vw;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: -10;
+    display: block;
+  }
+  .about-wrapper .about_bg_sp img {
+    width: 100%;
+    height: auto;
+  }
+  a.about-image {
+    width: 90vw;
+    margin: 0 auto;
+    display: block;
+  }
+  a.about-image img {
+    width: 100%;
+    height: auto;
+  }
+  .header-menu li.has-child:active > ul,
+  .header-menu li.has-child ul li:active > ul {
+    visibility: visible !important;
+    display: block !important;
+    opacity: 1 !important;
+  }
+  .search-wrapper {
+    padding-bottom: 50px;
+  }
+  .search-detail {
+    font-size: 0.875em;
+    width: fit-content;
+    background-color: #fff;
+    text-align: center;
+    margin: 14px auto 0 auto;
+    padding: 18px 50px;
+    box-shadow: 4px 4px 5px rgba(241, 204, 192, 0.75);
+    position: relative;
+    margin-bottom: 42px;
+  }
+  .search-detail::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background-color: #1A1A1A;
+    top: 50%;
+    right: -10%;
+  }
+  .flow-of-treatment-step-wrapper dl {
+    padding: 30px 0;
+  }
+  .flow-of-treatment-step-wrapper dl dt {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .flow-of-treatment-step-wrapper dl dd {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .flow-of-treatment-step-wrapper dl dd p {
+    margin-top: 10px;
+  }
+  .flow-of-treatment-step-wrapper .tel {
+    width: 80vw !important;
+    margin: 0 auto !important;
+    gap: 0 !important;
+    padding: 0 !important;
+    display: block;
+  }
+  .flow-of-treatment-step-wrapper .tel img {
+    width: 100%;
+    height: auto;
+  }
+  .beauty-price-list .title {
+    font-weight: normal;
+  }
+  .laser-device-container {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .laser-device-container img {
+    width: 100%;
+    height: auto;
+  }
+  .pico-menu-img {
+    display: block;
+    padding: 50px 0;
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .pico-menu-img img {
+    width: 100%;
+    height: auto;
+  }
+  .pico-menu-title ul {
+    display: block;
+    gap: 0;
+    justify-content: center;
+  }
+  .pico-menu-title ul li {
+    margin-bottom: 20px;
+  }
+  .tattoo-content-can, .tattoo-content-cannot {
+    padding: 40px 1.5em 10px;
+  }
+  .tattoo-content-can h4,
+  .tattoo-content-cannot h4 {
+    font-size: 1.33em;
+    width: fit-content;
+    margin: 0 0 25px 0;
+  }
+  .tattoo-flow-container div {
+    padding: 35px 1.5em;
+  }
+  .tattoo-risk-container {
+    background-color: #fff;
+    border: 1px #A48A81 solid;
+    padding: 40px 1.5em;
+  }
+  .doctors-title h3 {
+    text-align: center;
+    padding: 60px 0 50px 0;
+    font-size: 2em;
+    letter-spacing: 0.15em;
+  }
+  .beauty-menu-container-content {
+    max-width: auto;
+    margin: 0 auto 35px auto;
+    border: 0.75px #1a1a1a solid;
+    border-radius: 15px;
+    display: block;
+    justify-content: space-between;
+  }
+  .beauty-menu-title {
+    padding: 35px 1.5em;
+  }
+  .beauty-menu-title h5 {
+    font-size: 1.313em;
+    color: #C7AF06;
+    padding: 0 0 15px 0;
+  }
+  .beauty-menu-title div {
+    display: flex;
+    gap: 0.625em;
+    padding: 15px 0 0 0;
+  }
+  .beauty-menu-more {
+    background-color: #E6DB90;
+    border-radius: 0 0 15px 15px;
+    font-size: 0.875em;
+    padding: 20px 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .beauty-menu-more p::after {
+    content: url(../images11/more.svg);
+    display: block;
+    width: 30px;
+    position: absolute;
+    left: 70px;
+    top: 17px;
+  }
+  .beauty-price-list {
+    padding: 0 0.75em;
+  }
+  .beauty-price-list .title,
+  .beauty-price-list-set label {
+    font-size: 0.95em;
+    line-height: 1.6;
+  }
+  .beauty-price-list .content-wrapper {
+    padding: 5px 1em 22px;
+  }
+  .beauty-price-list .content-wrapper div {
+    gap: 1em;
+    align-items: flex-start;
+    padding: 18px 0 10px;
+  }
+  .beauty-price-list .content-wrapper div p {
+    line-height: 1.7;
+  }
+  .beauty-price-list .content-wrapper div p:first-child {
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .beauty-price-list .content-wrapper div p:last-child {
+    flex: 0 0 auto;
+    max-width: 48%;
+    text-align: right;
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+  .beauty-price-list .content-wrapper div p:only-child {
+    grid-column: 1 / -1;
+    min-width: 0;
+    width: 100%;
+    color: #A48A81;
+    font-weight: 500;
+    text-align: left;
+    white-space: normal;
+  }
+  .beauty-price-list .content-wrapper > div:not(.beauty-price-section-row) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0.25em;
+  }
+  .beauty-price-list .content-wrapper > div:not(.beauty-price-section-row) > p:first-child:not(:only-child) {
+    align-self: center;
+  }
+  .beauty-price-list .content-wrapper > div:not(.beauty-price-section-row) > p:last-child:not(:only-child) {
+    align-self: start;
+    justify-self: end;
+    max-width: none;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: right;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  .beauty-price-list .content-wrapper .beauty-price-section-row {
+    display: block;
+    width: 100%;
+    padding: 18px 0 10px;
+  }
+  .beauty-price-list .content-wrapper .beauty-price-section-row > .beauty-price-section-heading {
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    white-space: normal;
+  }
+  .beauty-price-list .content-wrapper .piamo-body-price-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0.25em;
+  }
+  .beauty-price-list .content-wrapper .piamo-body-label {
+    display: block;
+    min-width: 0;
+  }
+  .beauty-price-list .content-wrapper .piamo-body-label span {
+    display: block;
+  }
+  .beauty-price-list .content-wrapper .piamo-body-label span + span {
+    padding-left: 1em;
+  }
+  .beauty-price-list .content-wrapper .piamo-body-price-row > .piamo-body-price {
+    align-self: start;
+    justify-self: end;
+    max-width: none;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: right;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .beauty-price-list-set .title {
+    display: block;
+    padding: 20px 1.25em 22px;
+    line-height: 1.7;
+    text-align: left;
+    word-break: break-all;
+    overflow-wrap: anywhere;
+  }
+  .beauty-price-list-set .title div {
+    display: block;
+    margin: 0 0 8px 0;
+    max-width: 18em;
+  }
+  .beauty-price-list-set .title span {
+    display: inline-block;
+    font-size: 2em;
+    line-height: 1;
+    padding: 0 5px 0 0;
+  }
+  .beauty-price-list-set .content-wrapper div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.35em;
+  }
+  .beauty-price-list-set .content-wrapper div p:first-child {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+  .beauty-price-list-set .content-wrapper div p:last-child {
+    justify-self: end;
+    min-width: 0;
+    max-width: 100%;
+    text-align: right;
+    white-space: nowrap;
+    overflow-wrap: anywhere;
+  }
+  .beauty-price-text {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .beauty-price-text p {
+    max-width: calc(100vw - 70px);
+    white-space: normal;
+    word-break: break-all;
+    overflow-wrap: anywhere;
+  }
+  .dermapen-risk-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .dermapen-risk-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .co2-price-section {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+  .co2-price-section .piamo-price {
+    min-width: 680px !important;
+    table-layout: fixed !important;
+  }
+  .co2-price-section .piamo-price th,
+  .co2-price-section .piamo-price td {
+    line-height: 1.7 !important;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+  .co2-price-section .piamo-price th:nth-child(1),
+  .co2-price-section .piamo-price td:nth-child(1) {
+    width: 34%;
+  }
+  .co2-price-section .piamo-price th:nth-child(2),
+  .co2-price-section .piamo-price td:nth-child(2) {
+    width: 24%;
+  }
+  .co2-price-section .piamo-price th:nth-child(3),
+  .co2-price-section .piamo-price td:nth-child(3) {
+    width: 42%;
+  }
+}

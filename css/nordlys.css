@@ -1,0 +1,61 @@
+.nordlys-overview-text p + p {
+  margin-top: 0;
+}
+
+.nordlys-detail-wrapper .pico-menu-detail {
+  max-width: 1000px;
+}
+
+.nordlys-worry-wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.nordlys-worry-wrapper .dermapen-content-container {
+  margin-top: 0;
+}
+
+.nordlys-worry-wrapper .dermapen-content-table p {
+  position: relative;
+  padding-left: 52px;
+}
+
+.nordlys-worry-wrapper .dermapen-content-table p::before {
+  position: absolute;
+  top: 13px;
+  left: 0;
+  padding-right: 0;
+}
+
+.nordlys-worry-wrapper + .nordlys-detail-wrapper {
+  padding-top: 50px;
+}
+
+.nordlys-detail-wrapper .pico-menu-text p.nordlys-no-divider {
+  border-bottom: 0;
+}
+
+.nordlys-detail-wrapper .pico-menu-text p.nordlys-interval-line {
+  margin: 0;
+  padding-top: 0;
+}
+
+.nordlys-detail-wrapper .pico-menu-text p.nordlys-interval-line.nordlys-no-divider {
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .nordlys-worry-wrapper {
+    padding: 50px 15px;
+  }
+
+  .nordlys-worry-wrapper .dermapen-content-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .nordlys-worry-wrapper .dermapen-content-table {
+    display: block;
+    padding-left: 0;
+  }
+}

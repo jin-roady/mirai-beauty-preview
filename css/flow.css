@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+.flow-of-treatment-fv-wrapper{
+    background-image: url(../images/fv-flow-of-treatment-bg@2x.jpg);
+}
+.flow-of-treatment-faq{
+    text-align: center;
+}
+.flow-of-treatment-faq a{
+    border-bottom: 1px solid #000;
+}
+.flow-of-treatment-step-wrapper{
+    margin-bottom: 0;
+}
+.flow-of-treatment-step-wrapper h2{
+    border: #AF9182 solid 1px;
+    padding: 25px 0;
+    width: 430px;
+    max-width: 100%;
+    text-align: center;
+    margin: 50px auto;
+    font-size: 1.5625em;
+    color: #AF9182;
+    box-shadow: 2px 2px 0 #AF9182;
+}
+.flow-of-treatment-step-wrapper .coral,
+.flow-of-treatment-notes-container .coral{
+    color: #DE8575;
+}
+.flow-of-treatment-step-wrapper dl{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 50px;
+}
+.flow-of-treatment-step-wrapper div dl{
+    background-color: rgba(222, 206, 198, 0.4);
+}
+.flow-of-treatment-step-wrapper div dl:nth-child(even){
+    background-color: rgba(222, 206, 198, 0.1);
+}
+.flow-of-treatment-step-wrapper dl dt{
+    color: #DE8575;
+    font-size: 1.25em;
+    border-bottom: #000 dashed 1px;
+    padding-bottom: 10px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.flow-of-treatment-step-wrapper .flow-anesthesia-note {
+    display: block;
+    margin: 0 0 10px -1em;
+    font-size: 0.7em;
+    line-height: 1.6;
+    text-indent: 0;
+}
+.flow-of-treatment-step-wrapper dl dd p{
+    margin-bottom: 25px;
+}
+.flow-of-treatment-step-wrapper dl dd > div{
+    margin-top: 25px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+.flow-of-treatment-step-wrapper dl dd div span{
+    display: block;
+}
+.flow-of-treatment-step-wrapper dl dd div:first-child span{
+    text-align: right;
+}
+
+.flow-of-treatment-step-wrapper dl img{
+    max-width: 400px;
+    width: fit-content;
+    margin: 0 auto;
+    display: block;
+}
+.flow-aftercare-notes {
+    box-sizing: border-box;
+    max-width: 1000px;
+    margin: 0 auto 50px;
+    padding: 20px 50px;
+    background-color: rgba(249, 221, 210, 0.8);
+}
+.flow-aftercare-notes li {
+    position: relative;
+    list-style: none;
+    padding: 20px 0 20px 1.25em;
+    border-bottom: 1px dashed #1a1a1a;
+    line-height: 1.75;
+}
+.flow-aftercare-notes li::before {
+    content: "・";
+    position: absolute;
+    left: 0;
+}
+.flow-aftercare-notes li:last-child {
+    border-bottom: 0;
+}
+.flow-of-treatment-notes-wrapper{
+    background-color: rgba(249, 221, 210, 0.8);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.flow-of-treatment-notes-wrapper h3{
+    width: fit-content;
+    background-color: #fff;
+    font-size: 1.4375em;
+    padding: 2px 7px;
+    margin: 0 auto 30px;
+}
+.flow-of-treatment-notes-wrapper div > ul{
+    border: 1px solid #A48A81;
+    background-color: #fff;
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    padding: 0 45px;
+}
+.flow-of-treatment-notes-wrapper ul li{
+    list-style: none;
+    padding: 25px 0;
+    border-bottom: 1px dashed #000;
+}
+.flow-of-treatment-notes-wrapper ul li::before{
+    content: "○";
+}
+.flow-of-treatment-notes-wrapper ul li ul li{
+    padding: 15px 0 0 1em;
+    border: none;
+}
+.flow-of-treatment-notes-wrapper ul li ul li::before{
+    content: "・";
+}
+.flow-of-treatment-notes-wrapper .dashed-non {
+    border-bottom: 0px;
+}
+
+/* Improve wrapped text while keeping the original page design. */
+.flow-of-treatment-step-wrapper dl dt {
+    padding-left: 1em;
+    text-indent: -1em;
+    line-height: 1.6;
+}
+.flow-reserve-hours {
+    display: grid !important;
+    width: min(100%, 640px);
+    margin: 25px auto 0 !important;
+    gap: 10px;
+}
+.flow-reserve-hours-row {
+    display: grid !important;
+    grid-template-columns: minmax(10em, 1fr) minmax(0, 1.45fr);
+    gap: 16px;
+    align-items: baseline;
+    padding: 10px 14px;
+    border-bottom: 1px dashed #1A1A1A;
+}
+.flow-reserve-hours-row:last-child {
+    border-bottom: 0;
+}
+.flow-reserve-hours-row span {
+    text-align: left !important;
+}
+
+.flow-of-treatment-notes-wrapper div > ul > li {
+    position: relative;
+    padding-left: 1.25em;
+    line-height: 1.75;
+}
+.flow-of-treatment-notes-wrapper div > ul > li::before {
+    content: "・";
+    position: absolute;
+    left: 0;
+}
+.flow-of-treatment-notes-wrapper div > ul > li > ul {
+    margin-top: 10px;
+}
+.flow-of-treatment-notes-wrapper div > ul > li > ul > li {
+    position: relative;
+    padding-left: 1em;
+    line-height: 1.75;
+}
+.flow-of-treatment-notes-wrapper div > ul > li > ul > li::before {
+    position: absolute;
+    left: 0;
+}
+
+/* Limit the FAQ correction to the flow page. */
+.flow-of-treatment-step-wrapper + .faq-common-wrapper .title {
+    display: grid;
+    grid-template-columns: max-content max-content minmax(0, 1fr);
+    align-items: start;
+    column-gap: 16px;
+    padding-right: 4.5em;
+    line-height: 1.65;
+}
+.flow-of-treatment-step-wrapper + .faq-common-wrapper .title span:first-child {
+    align-self: center;
+}
+.flow-of-treatment-step-wrapper + .faq-common-wrapper .title span:nth-child(2) {
+    padding: 0;
+    font-size: 1.65em;
+    line-height: 1;
+}
+.flow-of-treatment-step-wrapper + .faq-common-wrapper .title span:last-child {
+    min-width: 0;
+    letter-spacing: 0;
+    overflow-wrap: anywhere;
+}
+.flow-of-treatment-step-wrapper + .faq-common-wrapper .title::after {
+    top: 50%;
+    right: 2em;
+}
+
+@media screen and (max-width: 690px) {
+    .flow-reserve-hours {
+        width: 100%;
+    }
+    .flow-reserve-hours-row {
+        grid-template-columns: 1fr;
+        gap: 2px;
+        padding: 10px 0;
+    }
+    .flow-reserve-hours-row span:first-child {
+        color: #906F64;
+    }
+    .flow-of-treatment-notes-wrapper div > ul > li {
+        padding-left: 1.1em;
+    }
+    .flow-of-treatment-notes-wrapper div > ul > li > ul > li {
+        padding-left: 1em;
+    }
+    .flow-aftercare-notes {
+        padding: 15px 20px;
+    }
+    .flow-of-treatment-step-wrapper + .faq-common-wrapper .title {
+        column-gap: 10px;
+        padding-right: 3.5em;
+    }
+    .flow-of-treatment-step-wrapper + .faq-common-wrapper .title span:nth-child(2) {
+        font-size: 1.45em;
+    }
+    .flow-of-treatment-step-wrapper + .faq-common-wrapper .title::after {
+        right: 1.5em;
+    }
+}

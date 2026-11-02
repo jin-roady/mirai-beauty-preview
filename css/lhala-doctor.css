@@ -1,0 +1,122 @@
+.lhala-main-bnr {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    margin: 0 auto 40px;
+    display: block;
+  }
+  
+  .lhala-wrapper {
+    background: #fff;
+    padding: 60px 20px;
+    font-family: 'M PLUS 1p', sans-serif;
+  }
+  
+  .lhala-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .lhala-container h3, .lhala-container h4 {
+    margin-top: 1.5em;
+    font-weight: 700;
+  }
+  
+  .lhala-price {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .lhala-price th,
+  .lhala-price td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .lhala-disclaimer {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #666;
+  }
+
+  .liftera-content-container {
+    max-width: 1000px;
+    margin: 55px auto 0 auto;
+    padding: 40px 0 50px 0;
+    background-color: #fff;
+    border: 2px #A48A81 solid;
+}
+.liftera-content-container h5 {
+    text-align: center;
+    font-size: 1.188em;
+    background: linear-gradient(180deg, #fff 0%, #fff 70%, #ECBBAF 70%, #ECBBAF 100%);
+    width: fit-content;
+    margin: 0 auto 22px auto;
+}
+.liftera-content-table {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10em;
+}
+.liftera-content-table p {
+    padding: 13px 0 0 0;
+}
+.liftera-content-table p::before {
+    content: url(../images/check2.png);
+    vertical-align: middle;
+    padding: 0 1em 0 0;
+}
+
+.lhala-detail-wrapper {
+    padding-top: 0 !important;
+    padding-bottom: 20px !important;
+}
+
+.lhala-detail-wrapper h4 {
+    margin-top: 50px !important;
+}
+
+.lhala-detail-wrapper > h4:first-child {
+    margin-top: 40px !important;
+}
+
+.lhala-treatment-detail-wrapper {
+    padding-top: 0 !important;
+}
+
+.lhala-treatment-detail-wrapper .pico-menu-detail h4 {
+    margin-top: 0 !important;
+}
+
+@media screen and (max-width: 690px) {
+.liftera-content-container,
+    .liftera-risk-container,
+    .liftera-menu-container,
+    .liftera-menu-detail,
+    .liftera-point-container div,
+    .liftera-menu-detail div{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .liftera-content-table {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 0 10px;
+    }
+    .liftera-content-table p {
+        display: block;
+        max-width: none;
+        margin: 0;
+        line-height: 1.7;
+        text-align: left;
+    }
+    .liftera-content-table p::before {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 0.8em 0 0;
+        line-height: 1;
+    }
+  }
