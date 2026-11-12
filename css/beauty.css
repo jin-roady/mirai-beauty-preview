@@ -165,6 +165,18 @@
     padding: 0 0 20px 0;
     font-size: 0.875em;
 }
+.beauty-price-text--indented p {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+.beauty-price-text--indented .beauty-price-notes-divider {
+    border: 0;
+    border-top: 2px solid #1a1a1a;
+    margin: 0 0 20px;
+}
+.beauty-price-text--indented .beauty-price-phone {
+    white-space: nowrap;
+}
 .beauty-price-list p .link {
     color: #DE8575;
     border-bottom: 0.5px #DE8575 solid;
