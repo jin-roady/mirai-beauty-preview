@@ -169,6 +169,40 @@
     padding-left: 1em;
     text-indent: -1em;
 }
+.beauty-price-text--indented .beauty-set-rule {
+    padding-bottom: 8px;
+}
+.beauty-price-text .beauty-set-examples {
+    margin: 0 0 20px 1em;
+    font-size: 0.875em;
+}
+.beauty-price-text .beauty-set-examples p {
+    padding: 0;
+    text-indent: 0;
+    font-size: inherit;
+}
+.beauty-set-examples .beauty-set-example-group + .beauty-set-example-group {
+    margin-top: 0.75em;
+}
+.beauty-set-examples .beauty-set-example-heading {
+    color: #c00000;
+    text-decoration: underline;
+    text-decoration-color: #c00000;
+    text-underline-offset: 0.2em;
+}
+.beauty-set-examples ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.beauty-set-examples li {
+    padding-left: 1em;
+    text-indent: -1em;
+    overflow-wrap: anywhere;
+}
+.beauty-set-examples li::before {
+    content: "・";
+}
 .beauty-price-text--indented .beauty-price-notes-divider {
     border: 0;
     border-top: 2px solid #1a1a1a;
